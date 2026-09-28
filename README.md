@@ -130,6 +130,6 @@ Fue un poco difìcil al principio, pero despuès fue màs facil. La proxima vez 
 - [x] Probé todos los casos de la tabla
 - [x] Hice los Experimentos A y B y dejé el código correcto al terminar
 - [x] No modifiqué `utilerias.h`
-- [ ] Hice al menos 3 commits con mensajes claros
-- [ ] Hice `git push` y verifiqué mi fork en GitHub
+- [x] Hice al menos 3 commits con mensajes claros
+- [x] Hice `git push` y verifiqué mi fork en GitHub
 - [ ] Entregué el enlace de mi fork en Classroom
