@@ -2,51 +2,51 @@
 ## 1. Descripción del problema (Fase 1)
 <!-- Explica con tus palabras qué hace tu programa y para qué serviría en la vida real. Máximo 4 líneas. -->
 
-_____
+El programa pide el ancho y el alto de un rectàngulo y calcula su àrea y su perimetro. Sirve para conocer estas medidas a partir de sus dimensiones. 
 
 ## 2. Entradas y salidas (Fase 1)
 <!-- Define cada entrada y cada salida, con su tipo de dato, sus unidades y su objetivo. -->
 
 **Entradas:**
-1. _____
-2. _____
+1. Ancho del rectàngulo: double, en cm.
+2. Alto del rectàngulo: double, en cm.
 
 **Salidas:**
-1. _____
-2. _____
+1. Àrea del rectàngulo: en cm2
+2. Perìmetro del rectàngulo, en cm.
 
 **Fórmulas** (área y perímetro):
-_____
+Àrea = ancho x alto y Perìmetro= 2 x (ancho+alto) 
 
 ## 3. Restricciones e invariante (Fase 1 y 2)
 
 **Restricciones** (¿qué debe cumplirse?):
-- _____
-- _____
+- El ancho debe ser mayor que 0.
+- El alto debe ser mayor que 0.
 
 **¿Qué hace mi programa con una medida de 0 o negativa? ¿Por qué?**
-_____
+La vuelve a pedir hasta que sea mayor que 0, porque una medida de 0 o negativa no tiene sentido para un rectàngulo. 
 
 **¿Quién detecta cada error?** (¿qué revisa `leerDecimal` y qué reviso yo?)
-_____
+leerDecimal detecta si un nùmero no es vàlido. Mi programa revisa si el nùmero es mayor que 0. 
 
 **Invariante** (al salir del ciclo que pide el ancho, ¿qué es seguro sobre `ancho`?):
-_____
+Al salir del ciclo, el ancho siempre es mayor que 0. 
 
 ## 4. Casos resueltos a mano (Fase 1)
 
 | Caso | Ancho | Alto | Área calculada a mano | Perímetro calculado a mano |
 |---|---|---|---|---|
-| 1 | _____ | _____ | _____ | _____ |
-| 2 (cuadrado) | _____ | _____ | _____ | _____ |
-| 3 (con decimales) | _____ | _____ | _____ | _____ |
+| 1 | 5 | 3 | 15cm2 | 16cm |
+| 2 (cuadrado) | 4 | 4 | 16cm2 | 16 |
+| 3 (con decimales) | 2.5 | 4 | 10cm2 | 13cm |
 
 ## 5. Receta en pseudocódigo (Fase 2)
 <!-- Tu receta va en el archivo RECETA.md. Aquí solo responde las preguntas. -->
 
-**¿Probé mi receta a mano con un caso válido y uno inválido?** Sí / No
-**¿Tuve que corregirla?** _____
-**¿Cuántas versiones de mi receta escribí hasta la final?** _____
+**¿Probé mi receta a mano con un caso válido y uno inválido?** Sí
+**¿Tuve que corregirla?** No
+**¿Cuántas versiones de mi receta escribí hasta la final?** 1
 
 ## 6. Cómo compilar y ejecutar (Fase 3)
 
