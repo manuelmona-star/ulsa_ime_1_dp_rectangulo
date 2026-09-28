@@ -108,7 +108,7 @@ _____
 ## 12. Reflexión final
 
 **¿Qué aprendí con esta práctica?**
-Aprendì a convertir una receta pseudocòdigo y despuès en C++
+Aprendì a convertir una receta pseudocòdigo y despuès en C++, tambien aprendi a validar los datos antes de realizar los càlculos.
 
 **Ahora que terminé, ¿qué cambiaría de mi proceso?**
 Probarìa cada parte del programa desde el principio.
@@ -120,14 +120,14 @@ Lo màs difìcil fue validar las entradas. Lo resolvì usando ciclo while.
 ¿Còmo puedo mejorar la validaciòn de entradas?
 
 **Diseñar la receta desde cero, ¿fue más fácil o más difícil de lo que esperaba? ¿Qué haría distinto la próxima vez?**
-Fue un poco difìcil al principio, pero despuès fue màs facil. La proxima vez probarìa la receta con màs casos. 
+Fue un poco difìcil al principio, pero despuès fue màs facil. La proxima vez probarìa la receta con màs casos. Tambièn revisarìa cada entrada antes de continuar.
 
 ## 13. Lista de verificación antes de entregar (Fase 5)
 
 - [x] Llené todas las secciones (no quedan `_____`)
 - [x] Escribí mi receta completa en `RECETA.md` antes de programar
 - [x] Mi programa compila sin advertencias
-- [ ] Probé todos los casos de la tabla
+- [x] Probé todos los casos de la tabla
 - [x] Hice los Experimentos A y B y dejé el código correcto al terminar
 - [x] No modifiqué `utilerias.h`
 - [ ] Hice al menos 3 commits con mensajes claros
