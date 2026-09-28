@@ -56,19 +56,22 @@ g++ -Wall -Wextra -std=c++17 main.cpp -o rectangulo
 ```
 
 ## 7. Ejemplo de ejecución (Fase 3)
-<!-- Pega aquí lo que muestra tu programa en pantalla con un caso normal. -->
 
 ```
-_____
+Area y perimetro de un rectangulo
+Ingresa el ancho: Ancho: 5
+Ingresa el alto: Alto: 3
+Area: 15 cm2
+Perimetro: 16 cm
 ```
 
 ## 8. Experimentos (Fase 3)
 
 **Experimento A: ¿qué resultado dio `2 * ancho + alto` con 5 × 3? ¿Por qué?**
-_____
+13. Porque 2 x 5 +3 = 13 y no es la fòrmula del perìmetro. 
 
 **Experimento B: sin validación, ¿qué mostró el programa con ancho -4 y alto 3? ¿Tiene sentido?**
-_____
+Mostraba un àrea negativa y un perìmetro incorrecto. No tiene sentido porque una medida no puede ser negativa. 
 
 **Experimento C (opcional): con `int`, ¿qué pasó con 2.5 y con 100000 × 100000?**
 _____
@@ -77,22 +80,22 @@ _____
 
 | Caso | Ancho | Alto | Esperado | Obtenido | ¿Pasó? |
 |---|---|---|---|---|---|
-| Normal | 5 | 3 | Área 15, perímetro 16 | _____ | _____ |
-| Cuadrado | 4 | 4 | Área 16, perímetro 16 | _____ | _____ |
-| Decimales | 2.5 | 4 | Área 10, perímetro 13 | _____ | _____ |
-| Muy pequeño | 0.1 | 0.1 | Área 0.01, perímetro 0.4 | _____ | _____ |
-| Ancho cero | 0 | 3 | vuelve a pedir el ancho | _____ | _____ |
-| Alto negativo | 5 | -2 | vuelve a pedir el alto | _____ | _____ |
-| Texto | `abc` | 3 | `leerDecimal` vuelve a pedir | _____ | _____ |
-| Caso propio 1 | _____ | _____ | _____ | _____ | _____ |
-| Caso propio 2 | _____ | _____ | _____ | _____ | _____ |
+| Normal | 5 | 3 | Área 15, perímetro 16 | 15,16 | Si |
+| Cuadrado | 4 | 4 | Área 16, perímetro 16 | 16,16 | Si |
+| Decimales | 2.5 | 4 | Área 10, perímetro 13 | 10,13 | Si |
+| Muy pequeño | 0.1 | 0.1 | Área 0.01, perímetro 0.4 | 0.01,0.4| Si |
+| Ancho cero | 0 | 3 | vuelve a pedir el ancho | Rechazado | Si |
+| Alto negativo | 5 | -2 | vuelve a pedir el alto | Rechazado | Si |
+| Texto | `abc` | 3 | `leerDecimal` vuelve a pedir | Rechazado | Si |
+| Caso propio 1 | 2 | 3 | àrea 6, perìmetro 10 | 6,10 | Si |
+| Caso propio 2 | 10 | 2 | àrea 20, perìmetro 24 | 20,24 | Si |
 
 ## 10. Bitácora de mejoras (Fase 4)
 
 | # | ¿Qué falló o qué quise mejorar? | ¿Qué cambié? | ¿Funcionó? |
 |---|---|---|---|
-| 1 | _____ | _____ | _____ |
-| 2 | _____ | _____ | _____ |
+| 1 | Validaciòn de ancho y alto | Agreguè while para rechazar valores <= 0 | Si |
+| 2 | Càlculo de àrea y perìmetro | Agreguè las fòrmulas correspondientes | Si |
 
 **Reto elegido (opcional):** _____
 
@@ -100,33 +103,33 @@ _____
 
 | Duda | Lo que ya intenté |
 |---|---|
-| _____ | _____ |
+| Còmo manejar correctamente entradas de texto? | Usè leerDecimal para validar la Entrada. |
 
 ## 12. Reflexión final
 
 **¿Qué aprendí con esta práctica?**
-_____
+Aprendì a convertir una receta pseudocòdigo y despuès en C++
 
 **Ahora que terminé, ¿qué cambiaría de mi proceso?**
-_____
+Probarìa cada parte del programa desde el principio.
 
 **¿Qué fue lo más difícil y cómo lo resolví?**
-_____
+Lo màs difìcil fue validar las entradas. Lo resolvì usando ciclo while.
 
 **¿Qué pregunta me quedó sin responder?**
-_____
+¿Còmo puedo mejorar la validaciòn de entradas?
 
 **Diseñar la receta desde cero, ¿fue más fácil o más difícil de lo que esperaba? ¿Qué haría distinto la próxima vez?**
-_____
+Fue un poco difìcil al principio, pero despuès fue màs facil. La proxima vez probarìa la receta con màs casos. 
 
 ## 13. Lista de verificación antes de entregar (Fase 5)
 
-- [ ] Llené todas las secciones (no quedan `_____`)
-- [ ] Escribí mi receta completa en `RECETA.md` antes de programar
-- [ ] Mi programa compila sin advertencias
+- [x] Llené todas las secciones (no quedan `_____`)
+- [x] Escribí mi receta completa en `RECETA.md` antes de programar
+- [x] Mi programa compila sin advertencias
 - [ ] Probé todos los casos de la tabla
-- [ ] Hice los Experimentos A y B y dejé el código correcto al terminar
-- [ ] No modifiqué `utilerias.h`
+- [x] Hice los Experimentos A y B y dejé el código correcto al terminar
+- [x] No modifiqué `utilerias.h`
 - [ ] Hice al menos 3 commits con mensajes claros
 - [ ] Hice `git push` y verifiqué mi fork en GitHub
 - [ ] Entregué el enlace de mi fork en Classroom
